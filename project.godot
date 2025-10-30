@@ -22,9 +22,8 @@ SceneManager="*res://autoload/SceneManager.gd"
 
 [display]
 
-window/size/viewport_width=1800
-window/size/viewport_height=900
-window/stretch/scale=1.3
+window/size/viewport_width=2100
+window/size/viewport_height=1200
 
 [rendering]
 
