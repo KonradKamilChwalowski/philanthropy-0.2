@@ -1,0 +1,244 @@
+[gd_scene load_steps=8 format=3 uid="uid://bvq0ccds78c5p"]
+
+[ext_resource type="Texture2D" uid="uid://dirtwfcl37mpw" path="res://art/icons/money.png" id="1_1lhb2"]
+[ext_resource type="Script" uid="uid://bh4nvd2e64x3e" path="res://ui_elements/player_interface.gd" id="1_mmw1f"]
+[ext_resource type="PackedScene" uid="uid://cy6woamx24gkg" path="res://cards_and_dices/dice.tscn" id="1_s2sgk"]
+[ext_resource type="Texture2D" uid="uid://clratr0q4bvli" path="res://art/icons/materials.png" id="2_u342y"]
+[ext_resource type="Texture2D" uid="uid://c3mcklvil2wd8" path="res://art/icons/space.png" id="3_mmw1f"]
+[ext_resource type="Texture2D" uid="uid://nxwqu37o5gd1" path="res://art/icons/energy.png" id="4_asdyt"]
+[ext_resource type="Texture2D" uid="uid://b2422rhykfelk" path="res://art/icons/tools.png" id="5_efhwj"]
+
+[node name="PlayerInterface" type="Control"]
+custom_minimum_size = Vector2(500, 200)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1300.0
+offset_bottom = -700.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mmw1f")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(500, 280)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 0, 0, 1)
+
+[node name="ResourcesContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 0
+
+[node name="MoneyButton" type="Button" parent="ResourcesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+flat = true
+autowrap_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="ResourcesContainer/MoneyButton"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 80.0
+offset_bottom = 70.0
+texture = ExtResource("1_1lhb2")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="ResourcesContainer/MoneyButton"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 0
+offset_top = 70.0
+offset_right = 100.0
+offset_bottom = 100.0
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MaterialsButton" type="Button" parent="ResourcesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+flat = true
+autowrap_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="ResourcesContainer/MaterialsButton"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 80.0
+offset_bottom = 70.0
+texture = ExtResource("2_u342y")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="ResourcesContainer/MaterialsButton"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 0
+offset_top = 70.0
+offset_right = 100.0
+offset_bottom = 100.0
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpaceButton" type="Button" parent="ResourcesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+flat = true
+autowrap_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="ResourcesContainer/SpaceButton"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 80.0
+offset_bottom = 70.0
+texture = ExtResource("3_mmw1f")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="ResourcesContainer/SpaceButton"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 0
+offset_top = 70.0
+offset_right = 100.0
+offset_bottom = 100.0
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EnergyButton" type="Button" parent="ResourcesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+flat = true
+autowrap_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="ResourcesContainer/EnergyButton"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 80.0
+offset_bottom = 70.0
+texture = ExtResource("4_asdyt")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="ResourcesContainer/EnergyButton"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 0
+offset_top = 70.0
+offset_right = 100.0
+offset_bottom = 100.0
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ToolsButton" type="Button" parent="ResourcesContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+flat = true
+autowrap_mode = 3
+
+[node name="TextureRect" type="TextureRect" parent="ResourcesContainer/ToolsButton"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 0
+offset_left = 20.0
+offset_top = 10.0
+offset_right = 80.0
+offset_bottom = 70.0
+texture = ExtResource("5_efhwj")
+expand_mode = 3
+
+[node name="Label" type="Label" parent="ResourcesContainer/ToolsButton"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 0
+offset_top = 70.0
+offset_right = 100.0
+offset_bottom = 100.0
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SliderDicesContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 0
+offset_top = 100.0
+offset_right = 300.0
+offset_bottom = 200.0
+theme_override_constants/separation = 0
+
+[node name="HSlider" type="HSlider" parent="SliderDicesContainer"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+min_value = -6.0
+max_value = 6.0
+rounded = true
+editable = false
+scrollable = false
+tick_count = 13
+ticks_on_borders = true
+
+[node name="Dice0" parent="SliderDicesContainer" instance=ExtResource("1_s2sgk")]
+layout_mode = 2
+
+[node name="Dice1" parent="SliderDicesContainer" instance=ExtResource("1_s2sgk")]
+layout_mode = 2
+
+[node name="Dice2" parent="SliderDicesContainer" instance=ExtResource("1_s2sgk")]
+visible = false
+layout_mode = 2
+
+[node name="SliderDicesContainer2" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(500, 100)
+layout_mode = 0
+offset_top = 100.0
+offset_right = 300.0
+offset_bottom = 200.0
+theme_override_constants/separation = 0
+
+[node name="SliderButton" type="Button" parent="SliderDicesContainer2"]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+flat = true
+
+[node name="DiceButton" type="Button" parent="SliderDicesContainer2"]
+custom_minimum_size = Vector2(300, 100)
+layout_mode = 2
+flat = true
+
+[node name="LessMoreContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(500, 80)
+layout_mode = 0
+offset_top = 200.0
+offset_right = 500.0
+offset_bottom = 280.0
+theme_override_constants/separation = 0
+
+[node name="LessButton" type="Button" parent="LessMoreContainer"]
+custom_minimum_size = Vector2(250, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "-"
+flat = true
+
+[node name="MoreButton" type="Button" parent="LessMoreContainer"]
+custom_minimum_size = Vector2(250, 80)
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "+"
+flat = true
+
+[connection signal="pressed" from="ResourcesContainer/MoneyButton" to="." method="_on_money_button_pressed"]
+[connection signal="pressed" from="ResourcesContainer/MaterialsButton" to="." method="_on_materials_button_pressed"]
+[connection signal="pressed" from="ResourcesContainer/SpaceButton" to="." method="_on_space_button_pressed"]
+[connection signal="pressed" from="ResourcesContainer/EnergyButton" to="." method="_on_energy_button_pressed"]
+[connection signal="pressed" from="ResourcesContainer/ToolsButton" to="." method="_on_tools_button_pressed"]
+[connection signal="pressed" from="SliderDicesContainer2/SliderButton" to="." method="_on_slider_button_pressed"]
+[connection signal="pressed" from="SliderDicesContainer2/DiceButton" to="." method="_on_dice_button_pressed"]
+[connection signal="pressed" from="LessMoreContainer/LessButton" to="." method="_on_less_button_pressed"]
+[connection signal="pressed" from="LessMoreContainer/MoreButton" to="." method="_on_more_button_pressed"]
