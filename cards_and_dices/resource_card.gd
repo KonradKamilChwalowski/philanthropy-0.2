@@ -14,22 +14,22 @@ func _ready() -> void:
 	match resource_type:
 		"Money":
 			card_picture.texture = load(card_picture_folder_path.path_join("money.png"))
-			random_value = 2*int(randi() % 3 + 3)
+			random_value = 2*int(randi() % 3) + 2
 			name_label.text = names_array[0]
 		"Materials":
 			card_picture.texture = load(card_picture_folder_path.path_join("materials.png"))
-			random_value = 2*int(randi() % 3) + 2
+			random_value = 2*int(randi() % 2) + 2
 			name_label.text = names_array[1]
 		"Space":
 			card_picture.texture = load(card_picture_folder_path.path_join("space.png"))
-			random_value = 2*int(randi() % 3) + 2
+			random_value = 2*int(randi() % 2) + 2
 			name_label.text = names_array[2]
 		"Energy":
 			card_picture.texture = load(card_picture_folder_path.path_join("energy.png"))
-			random_value = 2*int(randi() % 3) + 2
+			random_value = 2*int(randi() % 2) + 2
 			name_label.text = names_array[3]
 		"Tools":
 			card_picture.texture = load(card_picture_folder_path.path_join("tools.png"))
-			random_value = 2*int(randi() % 3) + 2
+			random_value = 2*int(randi() % 2) + 2
 			name_label.text = names_array[4]
 	value_label.text = "Wartość: " + str(random_value)

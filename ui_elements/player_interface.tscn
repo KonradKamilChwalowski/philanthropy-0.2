@@ -30,8 +30,8 @@ color = Color(1, 0, 0, 1)
 [node name="ResourcesContainer" type="HBoxContainer" parent="."]
 custom_minimum_size = Vector2(500, 100)
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 500.0
+offset_bottom = 120.0
 theme_override_constants/separation = 0
 
 [node name="MoneyButton" type="Button" parent="ResourcesContainer"]
@@ -51,11 +51,12 @@ texture = ExtResource("1_1lhb2")
 expand_mode = 3
 
 [node name="Label" type="Label" parent="ResourcesContainer/MoneyButton"]
-custom_minimum_size = Vector2(100, 30)
+custom_minimum_size = Vector2(100, 50)
 layout_mode = 0
 offset_top = 70.0
 offset_right = 100.0
 offset_bottom = 100.0
+theme_override_font_sizes/font_size = 35
 text = "4"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -77,11 +78,12 @@ texture = ExtResource("2_u342y")
 expand_mode = 3
 
 [node name="Label" type="Label" parent="ResourcesContainer/MaterialsButton"]
-custom_minimum_size = Vector2(100, 30)
+custom_minimum_size = Vector2(100, 50)
 layout_mode = 0
 offset_top = 70.0
 offset_right = 100.0
 offset_bottom = 100.0
+theme_override_font_sizes/font_size = 35
 text = "4"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -103,11 +105,12 @@ texture = ExtResource("3_mmw1f")
 expand_mode = 3
 
 [node name="Label" type="Label" parent="ResourcesContainer/SpaceButton"]
-custom_minimum_size = Vector2(100, 30)
+custom_minimum_size = Vector2(100, 50)
 layout_mode = 0
 offset_top = 70.0
 offset_right = 100.0
 offset_bottom = 100.0
+theme_override_font_sizes/font_size = 35
 text = "4"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -129,11 +132,12 @@ texture = ExtResource("4_asdyt")
 expand_mode = 3
 
 [node name="Label" type="Label" parent="ResourcesContainer/EnergyButton"]
-custom_minimum_size = Vector2(100, 30)
+custom_minimum_size = Vector2(100, 50)
 layout_mode = 0
 offset_top = 70.0
 offset_right = 100.0
 offset_bottom = 100.0
+theme_override_font_sizes/font_size = 35
 text = "4"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -155,25 +159,26 @@ texture = ExtResource("5_efhwj")
 expand_mode = 3
 
 [node name="Label" type="Label" parent="ResourcesContainer/ToolsButton"]
-custom_minimum_size = Vector2(100, 30)
+custom_minimum_size = Vector2(100, 50)
 layout_mode = 0
 offset_top = 70.0
 offset_right = 100.0
 offset_bottom = 100.0
+theme_override_font_sizes/font_size = 35
 text = "4"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SliderDicesContainer" type="HBoxContainer" parent="."]
-custom_minimum_size = Vector2(500, 100)
+custom_minimum_size = Vector2(500, 80)
 layout_mode = 0
-offset_top = 100.0
-offset_right = 300.0
+offset_top = 120.0
+offset_right = 500.0
 offset_bottom = 200.0
 theme_override_constants/separation = 0
 
 [node name="HSlider" type="HSlider" parent="SliderDicesContainer"]
-custom_minimum_size = Vector2(200, 100)
+custom_minimum_size = Vector2(200, 80)
 layout_mode = 2
 min_value = -6.0
 max_value = 6.0
@@ -194,20 +199,20 @@ visible = false
 layout_mode = 2
 
 [node name="SliderDicesContainer2" type="HBoxContainer" parent="."]
-custom_minimum_size = Vector2(500, 100)
+custom_minimum_size = Vector2(500, 80)
 layout_mode = 0
-offset_top = 100.0
-offset_right = 300.0
+offset_top = 120.0
+offset_right = 500.0
 offset_bottom = 200.0
 theme_override_constants/separation = 0
 
 [node name="SliderButton" type="Button" parent="SliderDicesContainer2"]
-custom_minimum_size = Vector2(200, 100)
+custom_minimum_size = Vector2(200, 80)
 layout_mode = 2
 flat = true
 
 [node name="DiceButton" type="Button" parent="SliderDicesContainer2"]
-custom_minimum_size = Vector2(300, 100)
+custom_minimum_size = Vector2(300, 80)
 layout_mode = 2
 flat = true
 

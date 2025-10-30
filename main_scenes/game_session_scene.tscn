@@ -8,27 +8,27 @@
 script = ExtResource("1_buhs2")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(2100, 1200)
+custom_minimum_size = Vector2(2400, 1100)
 color = Color(0.43134022, 0.43134025, 0.43134025, 1)
 
 [node name="NewRoundButton" type="Button" parent="."]
 custom_minimum_size = Vector2(300, 150)
-offset_left = 1741.0
-offset_top = 1019.0
-offset_right = 2041.0
-offset_bottom = 1169.0
-scale = Vector2(1.2, 1.2)
+offset_left = 2008.0001
+offset_top = 905.0
+offset_right = 2308.0
+offset_bottom = 1055.0
+scale = Vector2(1.3, 1.3)
 theme_override_font_sizes/font_size = 40
 text = "Runda: X
 DALEJ"
 
 [node name="CardsContainer" type="HBoxContainer" parent="."]
 custom_minimum_size = Vector2(1040, 250)
-offset_left = 437.0
-offset_top = 452.0
-offset_right = 1477.0
-offset_bottom = 702.0
-scale = Vector2(1.2, 1.2)
+offset_left = 297.0
+offset_top = 587.0
+offset_right = 1337.0
+offset_bottom = 837.0
+scale = Vector2(1.6, 1.6)
 theme_override_constants/separation = 10
 
 [node name="ResourceCard0" parent="CardsContainer" instance=ExtResource("1_6fyyn")]
@@ -51,57 +51,58 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-scale = Vector2(1.2, 1.2)
 
 [node name="PlayerInterface0" parent="PlayerInterfaces" instance=ExtResource("2_cu6fm")]
 layout_mode = 1
-offset_left = 319.16666
-offset_top = 1.6666666
-offset_right = 779.1666
-offset_bottom = 161.66667
+offset_left = 188.0
+offset_top = 1.9999999
+offset_right = 648.0
+offset_bottom = 162.0
+scale = Vector2(1.6, 1.6)
 player_color = Color(0.78431374, 0, 0, 1)
 
 [node name="PlayerInterface1" parent="PlayerInterfaces" instance=ExtResource("2_cu6fm")]
 layout_mode = 1
-offset_left = 931.66656
-offset_right = 1391.6665
+offset_left = 1438.0
+offset_right = 1898.0
 offset_bottom = 160.0
+scale = Vector2(1.6, 1.6)
 player_color = Color(0, 0, 0.78431374, 1)
 
 [node name="PlayerInterface2" parent="PlayerInterfaces" instance=ExtResource("2_cu6fm")]
 visible = false
 layout_mode = 1
-offset_left = 1750.0
-offset_top = 219.16666
-offset_right = 2210.0
-offset_bottom = 379.16666
+offset_left = 1795.0
+offset_top = 166.0
+offset_right = 2255.0
+offset_bottom = 326.0
 rotation = 1.5707964
 
 [node name="PlayerInterface3" parent="PlayerInterfaces" instance=ExtResource("2_cu6fm")]
 visible = false
 layout_mode = 1
-offset_left = 1418.3334
-offset_top = 998.3331
-offset_right = 1878.3334
-offset_bottom = 1158.3331
+offset_left = 1477.0
+offset_top = 898.0
+offset_right = 1937.0
+offset_bottom = 1058.0
 rotation = 3.1415927
 
 [node name="PlayerInterface4" parent="PlayerInterfaces" instance=ExtResource("2_cu6fm")]
 visible = false
 layout_mode = 1
-offset_left = 837.49994
-offset_top = 999.1666
-offset_right = 1297.5
-offset_bottom = 1159.1666
+offset_left = 859.0
+offset_top = 901.0
+offset_right = 1319.0
+offset_bottom = 1061.0
 rotation = 3.1415927
 
 [node name="PlayerInterface5" parent="PlayerInterfaces" instance=ExtResource("2_cu6fm")]
 visible = false
 layout_mode = 1
-offset_left = 0.833333
-offset_top = 743.3333
-offset_right = 460.83334
-offset_bottom = 903.3333
+offset_left = 3.0
+offset_top = 649.0
+offset_right = 463.0
+offset_bottom = 809.0
 rotation = 4.712389
 
 [connection signal="pressed" from="NewRoundButton" to="." method="_on_new_round_button_pressed"]

@@ -10,18 +10,19 @@ anchors_preset = 0
 script = ExtResource("1_j8mbh")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(200, 250)
+custom_minimum_size = Vector2(200, 300)
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 color = Color(0, 0, 0, 1)
 
 [node name="NameLabel" type="Label" parent="."]
-custom_minimum_size = Vector2(200, 25)
+custom_minimum_size = Vector2(200, 50)
 layout_mode = 0
 offset_top = 5.0
 offset_right = 200.0
 offset_bottom = 30.0
+theme_override_font_sizes/font_size = 28
 text = "NAME_LABEL"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -30,17 +31,18 @@ vertical_alignment = 1
 custom_minimum_size = Vector2(180, 180)
 layout_mode = 0
 offset_left = 10.0
-offset_top = 35.0
+offset_top = 60.0
 offset_right = 190.0
-offset_bottom = 215.0
+offset_bottom = 240.0
 texture = ExtResource("2_g5j5k")
 
 [node name="ValueLabel" type="Label" parent="."]
-custom_minimum_size = Vector2(200, 25)
+custom_minimum_size = Vector2(200, 50)
 layout_mode = 0
-offset_top = 220.0
+offset_top = 250.0
 offset_right = 200.0
-offset_bottom = 245.0
+offset_bottom = 300.0
+theme_override_font_sizes/font_size = 28
 text = "VALUE_LABEL"
 horizontal_alignment = 1
 vertical_alignment = 1
