@@ -24,6 +24,7 @@ SceneManager="*res://autoload/SceneManager.gd"
 
 window/size/viewport_width=1800
 window/size/viewport_height=900
+window/stretch/scale=1.3
 
 [rendering]
 
