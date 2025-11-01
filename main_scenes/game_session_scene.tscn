@@ -102,4 +102,11 @@ offset_right = 460.0
 offset_bottom = 1070.0
 rotation = 4.712389
 
+[node name="ResolutionLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 40
+text = "ROZDIELCZOŚĆ"
+
 [connection signal="pressed" from="NewRoundButton" to="." method="_on_new_round_button_pressed"]
