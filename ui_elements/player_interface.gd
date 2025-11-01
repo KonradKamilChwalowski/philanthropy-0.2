@@ -3,12 +3,15 @@ class_name PlayerInterface extends Control
 @export var player_color: Color = Color(255,255,255)
 
 @onready var color_rect: ColorRect = $ColorRect
-@onready var resources_container := $ResourcesContainer
+@onready var VBC: VBoxContainer = $VBoxContainer
+@onready var resources_container := $VBoxContainer/ResourcesContainer
 @onready var resources_buttons_array: Array = []
-@onready var slider: Slider = $SliderDicesContainer/HSlider
-@onready var dice0: Dice = $SliderDicesContainer/Dice0
-@onready var dice1: Dice = $SliderDicesContainer/Dice1
-@onready var dice2: Dice = $SliderDicesContainer/Dice2
+@onready var slider_dices_container: HBoxContainer = $VBoxContainer/SliderArea/SliderDicesContainer
+@onready var slider_dices_buttons_container: HBoxContainer = $VBoxContainer/SliderArea/SliderDicesButtonsContainer
+@onready var slider: Slider = $VBoxContainer/SliderArea/SliderDicesContainer/HSlider
+@onready var dice0: Dice = $VBoxContainer/SliderArea/SliderDicesContainer/Dice0
+@onready var dice1: Dice = $VBoxContainer/SliderArea/SliderDicesContainer/Dice1
+@onready var dice2: Dice = $VBoxContainer/SliderArea/SliderDicesContainer/Dice2
 
 var interface_activ_element_type: String # resource / slider / dice
 var interface_activ_element_id: int = 0
@@ -59,6 +62,10 @@ func change_value_of_element() -> void:
 					dice2.visible = false
 				3:
 					dice2.visible = true
+
+#
+# BUTTONS
+#
 
 func _on_money_button_pressed() -> void:
 	interface_activ_element_type = "resource"

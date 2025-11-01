@@ -1,11 +1,13 @@
-extends Node2D
+extends Control
 
+@onready var background = $Background
 @onready var cards_container = $CardsContainer
 @onready var resource_card_scene := preload("res://cards_and_dices/resource_card.tscn")
 @onready var new_round_button: Button = $NewRoundButton
 @onready var player_interfaces: Control = $PlayerInterfaces
 
 func _ready() -> void:
+	scale = ResolutionManager.current_scale_vector
 	new_round()
 
 func new_round() -> void:

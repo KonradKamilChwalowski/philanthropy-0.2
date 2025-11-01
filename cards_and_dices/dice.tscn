@@ -9,14 +9,14 @@ anchors_preset = 0
 script = ExtResource("1_7k3rc")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-custom_minimum_size = Vector2(100, 80)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
 offset_right = 80.0
 offset_bottom = 80.0
 color = Color(0, 0, 0, 0.24705882)
 
 [node name="Label" type="Label" parent="."]
-custom_minimum_size = Vector2(100, 80)
+custom_minimum_size = Vector2(100, 100)
 layout_mode = 0
 offset_right = 100.0
 offset_bottom = 80.0
