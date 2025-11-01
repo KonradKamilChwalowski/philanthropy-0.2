@@ -8,6 +8,7 @@ extends Control
 @onready var resolution_label : Label = $ResolutionLabel
 
 func _ready() -> void:
+	await ResolutionManager.resolution_ready
 	scale = ResolutionManager.current_scale_vector
 	resolution_label.text = str(ResolutionManager.screen_size)
 	new_round()
