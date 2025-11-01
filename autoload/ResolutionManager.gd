@@ -13,12 +13,16 @@ func _ready() -> void:
 	)
 	emit_signal("resolution_ready")
 
-func change_resolution(new_resolution: Vector2i = Vector2i(1920, 1080)) -> void:
-	if not OS.has_feature("web"):
-		get_window().size = new_resolution
+func change_resolution(new_resolution: Vector2i) -> void:
+	var win := get_window()
+	win.content_scale_mode = Window.CONTENT_SCALE_MODE_VIEWPORT
+	win.content_scale_aspect = Window.CONTENT_SCALE_ASPECT_KEEP  # letterbox + centrowanie
+
 	var base := Vector2(1920.0, 1080.0)
 	var ratio := Vector2(new_resolution.x / base.x, new_resolution.y / base.y)
-	current_scale = min(ratio.x, ratio.y)
+	var factor: float = min(ratio.x, ratio.y)  # KLUCZ: najmniejszy współczynnik
+
+	current_scale = factor
 	current_scale_vector = ratio
 	screen_size = Vector2i(new_resolution)
-	get_window().content_scale_factor = current_scale
+	win.content_scale_factor = factor
